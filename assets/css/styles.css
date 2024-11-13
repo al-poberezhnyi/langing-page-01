@@ -1,9 +1,147 @@
 :root {
     font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    /* font-family: "Poppins", serif; */
+    color: #000;
+    --main-color: #fa4a0c;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+img {
+    object-fit: cover;
+}
+li {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.container {
+    padding-left: 115px;
+    padding-right: 115px;
+}
+
+/* header */
+
+.navbar {
+    display: flex;
+    max-width: 100%;
+    height: 155px;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+.logo__item > img {
+    max-width: 150px;
+    max-height: 65px;
+}
+
+.navbar__menu {
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    gap: 94px;
+}
+.menu__item {
+    padding: 10px;
+}
+
+.menu__item > a {
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+}
+
+.menu__item:first-child {
+    color: var(--main-color);
+}
+
+/* ----- */
+
+.outer-container {
+    width: 100%;
+    height: calc(100vh - 215px);
+    margin-bottom: 60px;
+}
+
+.restaurant-app__bg {
+    background-image: url("/assets/images/header-bg-main.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #fff;
+    text-align: center;
+}
+
+.inner-container__restaurant > p {
+    padding-top: 80px;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+}
+
+.inner-container__restaurant > h1 {
+    max-width: 800px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+    font-family: "Poppins", serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+}
+
+.inner-container__restaurant > h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+}
+
+.btn-container {
+    display: flex;
+    padding-top: 80px;
+    gap: 70px;
+}
+
+.btn {
+    width: 240px;
+    height: 70px;
+    padding: 16px 0 16px 0;
+
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background: transparent;
+
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+}
+
+.btn:first-child {
+    color: #fff;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
 }
